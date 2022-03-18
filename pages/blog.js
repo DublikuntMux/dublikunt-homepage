@@ -21,16 +21,16 @@ export default function Blog({ posts }) {
     return (
         <>
             <Head>
-                <title>Blog - dublikuntMax</title>
+                <title>Blog - DublikuntMax</title>
             </Head>
             <Container>
                 <Stack as="main" spacing={8} justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" >
                     <Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" px={4} >
                         <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
-                            Blog ({posts.length} posts)
+                            Найдено ({posts.length} постов)
                         </Heading>
                         <InputGroup mb={4} mr={4} w="100%">
-                            <Input aria-label="Поиск по имени" placeholder="Search by title" 
+                            <Input aria-label="Search by title" placeholder="Поиск по имени" 
                             onChange={(e) => setSearchValue(e.target.value)} />
                             <InputRightElement>
                                 <SearchIcon color="gray.300" />

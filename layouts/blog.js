@@ -17,7 +17,7 @@ export default function BlogLayout({ children, frontMatter }) {
     return (
         <Container>
             <Head>
-                <title>${slug} - Blog - Benjamin Carlson</title>
+                <title>${slug} - Blog - Dublikunt Max</title>
             </Head>
             <Stack
                 as="article"
@@ -50,13 +50,13 @@ export default function BlogLayout({ children, frontMatter }) {
                         <Flex align="center">
                             <Avatar
                                 size="xs"
-                                name="Benjamin Carlson"
+                                name="Dublikunt Max"
                                 src="../images/portrait.jpeg"
                                 mr={2}
                             />
                             <Text fontSize="sm" color={textColor[colorMode]}>
                                 {frontMatter.by}
-                                {'Benjamin Carlson / '}
+                                {'Dublikunt Max / '}
                                 {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
                             </Text>
                         </Flex>

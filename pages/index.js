@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useColorMode, Heading, Text, Flex, Stack, Button } from '@chakra-ui/react'
+import { useColorMode, Heading, Text, Flex, Stack} from '@chakra-ui/react'
 
 import Container from '../components/Container'
 
@@ -18,7 +18,6 @@ export default function Index() {
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" >
           <Heading mb={2}>Всем привет я Dublikunt Max</Heading>
           <Text color={colorSecondary[colorMode]}>Что я могу сказать про себя ? да не чего ))))</Text>
-          <Button data-splitbee-event="Button Click" data-splitbee-event-type="Resume">Покозать резюмэ</Button>
         </Flex>
       </Stack>
     </Container>
