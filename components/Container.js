@@ -1,7 +1,7 @@
 import React from 'react'
 import { useColorMode, Button, Flex, Box } from '@chakra-ui/react'
 import NextLink from 'next/link'
-import { SiBlogger, SiAirplayvideo, SiAngellist, SiGithub } from "react-icons/si";
+import { SiBlogger, SiAirplayvideo, SiAngellist, SiGithub, SiSlickpic } from "react-icons/si";
 import styled from '@emotion/styled'
 
 import DarkModeSwitch from '../components/DarkModeSwitch'
@@ -41,7 +41,7 @@ const Container = ({ children }) => {
                     <NextLink href="/" passHref> 
                         <Button leftIcon={<SiAirplayvideo />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
                         _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                            Главная страничка
+                            Главная
                         </Button>
                     </NextLink>
                     <NextLink href="/blog" passHref>
@@ -53,7 +53,13 @@ const Container = ({ children }) => {
                     <NextLink href="/social" passHref>
                         <Button leftIcon={<SiAngellist />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
                          _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                            Социальные сети
+                            Соц. сети
+                        </Button>
+                    </NextLink>
+                    <NextLink href="/progect" passHref>
+                        <Button leftIcon={<SiSlickpic />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                         _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                            Проэкты
                         </Button>
                     </NextLink>
                 </Box>
