@@ -38,24 +38,24 @@ const Container = ({ children }) => {
                 width="100%" bg={bgColor[colorMode]} as="nav" px={[2, 6, 6]} py={2} mt={8} mb={[0, 0, 8]} mx="auto"
             >
                 <Box>
-                    <Button leftIcon={<SiAirplayvideo />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
-                    _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                        <NextLink href="/" passHref>
+                    <NextLink href="/" passHref> 
+                        <Button leftIcon={<SiAirplayvideo />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                        _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                             Главная страничка
-                        </NextLink>
-                    </Button>
-                    <Button leftIcon={<SiBlogger />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
-                    _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                        <NextLink href="/blog" passHref>
+                        </Button>
+                    </NextLink>
+                    <NextLink href="/blog" passHref>
+                        <Button leftIcon={<SiBlogger />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                        _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                             Блог
-                        </NextLink>
-                    </Button>
-                    <Button leftIcon={<SiAngellist />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
-                    _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                        <NextLink href="/social" passHref>
+                        </Button>
+                    </NextLink>
+                    <NextLink href="/social" passHref>
+                        <Button leftIcon={<SiAngellist />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                         _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                             Социальные сети
-                        </NextLink>
-                    </Button>
+                        </Button>
+                    </NextLink>
                 </Box>
             <NextLink href="https://github.com/DublikuntMux/dublikunt-homepage" passHref>
                 <Button target="_blank" size="xs" leftIcon={<SiGithub />} as="a" variant='outline' p={[1, 2, 4]}
