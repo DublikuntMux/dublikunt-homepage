@@ -34,28 +34,32 @@ const Container = ({ children }) => {
 
     return (
         <>
-            <StickyNav flexDirection="row" justifyContent="space-between" alignItems="center" maxWidth="1000px" minWidth="456px"
+            <StickyNav flexDirection="row" justifyContent="space-between" alignItems="center" maxWidth="700px"
                 width="100%" bg={bgColor[colorMode]} as="nav" px={[2, 6, 6]} py={2} mt={8} mb={[0, 0, 8]} mx="auto"
             >
                 <Box>
-                    <NextLink href="/" passHref>
-                        <Button leftIcon={<SiAirplayvideo />} as="a" variant='outline' p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                    <Button leftIcon={<SiAirplayvideo />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                    _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                        <NextLink href="/" passHref>
                             Главная страничка
-                        </Button>
-                    </NextLink>
-                    <NextLink href="/blog" passHref>
-                        <Button leftIcon={<SiBlogger />} as="a" variant='outline' p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                        </NextLink>
+                    </Button>
+                    <Button leftIcon={<SiBlogger />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                    _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                        <NextLink href="/blog" passHref>
                             Блог
-                        </Button>
-                    </NextLink>
-                    <NextLink href="/social" passHref>
-                        <Button leftIcon={<SiAngellist />} as="a" variant='outline' p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                        </NextLink>
+                    </Button>
+                    <Button leftIcon={<SiAngellist />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                    _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                        <NextLink href="/social" passHref>
                             Социальные сети
-                        </Button>
-                    </NextLink>
+                        </NextLink>
+                    </Button>
                 </Box>
             <NextLink href="https://github.com/DublikuntMux/dublikunt-homepage" passHref>
-                <Button leftIcon={<SiGithub />} as="a" variant='outline' p={[1, 2, 4]} _hover={{ backgroundColor: navHoverBg[colorMode] }}>
+                <Button target="_blank" size="xs" leftIcon={<SiGithub />} as="a" variant='outline' p={[1, 2, 4]}
+                 _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                     Sorce
                 </Button>
             </NextLink>

@@ -70,4 +70,3 @@ export default function BlogLayout({ children, frontMatter }) {
         </Container>
     )
 }
-
