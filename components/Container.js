@@ -7,23 +7,20 @@ import styled from '@emotion/styled'
 import DarkModeSwitch from '../components/DarkModeSwitch'
 
 const Container = ({ children }) => {
+    
     const { colorMode } = useColorMode()
-
     const bgColor = {
         light: 'white',
         dark: '#171717'
     }
-
     const color = {
         light: 'black',
         dark: 'white'
     }
-
     const navHoverBg = {
         light: 'gray.300',
         dark: 'gray.800',
     }
-
     const StickyNav = styled(Flex)`
         position: sticky;
         z-index: 10;

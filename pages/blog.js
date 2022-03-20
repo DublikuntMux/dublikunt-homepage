@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
 import { Heading, Flex, Stack, Input, InputGroup, InputRightElement } from '@chakra-ui/react'
-
 import Container from '../components/Container'
 import { getAllFilesFrontMatter } from '../lib/mdx'
 import BlogPost from '../components/BlogPost'
 
-import { SearchIcon } from '@chakra-ui/icons'
+import { RiSearchEyeLine } from 'react-icons/ri'
 
 export default function Blog({ posts }) {
     const [searchValue, setSearchValue] = useState('')
@@ -33,7 +32,7 @@ export default function Blog({ posts }) {
                             <Input aria-label="Search by title" placeholder="Поиск по имени" 
                             onChange={(e) => setSearchValue(e.target.value)} />
                             <InputRightElement>
-                                <SearchIcon color="gray.300" />
+                                <RiSearchEyeLine color="gray.300" />
                             </InputRightElement>
                         </InputGroup>
                         {!filteredBlogPosts.length && 'Ничего не найдено :('}

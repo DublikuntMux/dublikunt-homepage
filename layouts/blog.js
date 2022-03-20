@@ -51,7 +51,7 @@ export default function BlogLayout({ children, frontMatter }) {
                             <Avatar
                                 size="xs"
                                 name="Dublikunt Max"
-                                src="https://avatars.githubusercontent.com/u/73074789?v=4"
+                                src="/images/Ava.jpg"
                                 mr={2}
                             />
                             <Text fontSize="sm" color={textColor[colorMode]}>
