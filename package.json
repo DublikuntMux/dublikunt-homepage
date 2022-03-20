@@ -4,8 +4,11 @@
   "description": "Max's website",
   "scripts": {
     "dev": "next dev",
-    "start": "next build && next start",
-    "export": "next build && next export"
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "server": "serve out",
+    "deploy": "npm run build && npm run export"
   },
   "author": "Dublikunt Max",
   "license": "MIT",
@@ -28,5 +31,8 @@
     "remark-capitalize": "^1.1.0",
     "remark-code-titles": "^0.1.1",
     "remark-slug": "^6.0.0"
+  },
+  "devDependencies": {
+    "serve": "^13.0.2"
   }
 }
