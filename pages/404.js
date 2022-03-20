@@ -6,9 +6,9 @@ export default function Custom404() {
 
     return (
         <Container>
-            <Heading as="h1" align="center">Не найдено</Heading>
+            <Heading size="2xl" mb={2} align="center">Не найдено</Heading>
             <Text align="center">Такой странички нет</Text>
-            <Box my={6} align="center">
+            <Box my={3} align="center">
                 <NextLink href="/">
                     <Button colorScheme="teal">Вернутся на главную</Button>
                 </NextLink>

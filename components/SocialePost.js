@@ -20,15 +20,15 @@ const SocialePost = ({img, href, description, name}) => {
                 <Image src={img}/>
             </AspectRatio>
             <Box p='6'>
-                <Box mt='1' fontWeight='semibold' as='h4' lineHeight='tight' isTruncated >
+                <Box mt='1' fontWeight='semibold' lineHeight='tight' isTruncated >
                     {name}
                 </Box>
                 <Text fontSize='10px' color={color[colorMode]}>
                     {description}
                 </Text>
-                <Box mt='1' fontWeight='semibold' as='h4' lineHeight='tight' isTruncated >
+                <Box mt='1' fontWeight='semibold' lineHeight='tight' isTruncated >
                     <NextLink href={href} passHref> 
-                        <Button target="_blank" rightIcon={<AiOutlineArrowRight color={color[colorMode]}/>} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                        <Button target="_blank" rightIcon={<AiOutlineArrowRight color={color[colorMode]}/>} size='sm' variant='outline' p={[1, 2, 4]} 
                         _hover={{ backgroundColor: HoverBg[colorMode] }}>
                             Ссылка
                         </Button>

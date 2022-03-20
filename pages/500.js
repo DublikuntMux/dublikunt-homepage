@@ -6,9 +6,9 @@ export default function Custom500() {
 
     return (
         <Container>
-            <Heading as="h1" align="center">Произошла ошибка</Heading>
+            <Heading size="2xl" mb={2} align="center">Произошла ошибка</Heading>
             <Text align="center">У нас произошла ошибка</Text>
-            <Box my={6} align="center">
+            <Box my={3} align="center">
                 <NextLink href="/">
                     <Button colorScheme="teal">Вернутся на главную</Button>
                 </NextLink>

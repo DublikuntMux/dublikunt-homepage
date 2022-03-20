@@ -1,14 +1,12 @@
 {
   "name": "dublikunt-homepage",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Max's website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next export",
     "server": "serve out",
-    "deploy": "npm run build && npm run export"
+    "deploy": "next build && next export"
   },
   "author": "Dublikunt Max",
   "license": "MIT",

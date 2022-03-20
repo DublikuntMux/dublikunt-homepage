@@ -29,12 +29,12 @@ const ProgectPost = ({img, href, name, stars, status}) => {
                     {status}
                 </Badge>
                 </Box>
-                <Box mt='1' fontWeight='semibold' as='h4' lineHeight='tight' isTruncated >
+                <Box mt='1' fontWeight='semibold' lineHeight='tight' isTruncated >
                     {name}
                 </Box>
-                <Box mt='1' fontWeight='semibold' as='h4' lineHeight='tight' isTruncated >
+                <Box mt='1' fontWeight='semibold' lineHeight='tight' isTruncated >
                     <NextLink href={href} passHref> 
-                        <Button target="_blank" rightIcon={<AiOutlineArrowRight color={invcolor[colorMode]}/>} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                        <Button target="_blank" rightIcon={<AiOutlineArrowRight color={invcolor[colorMode]}/>} size='sm' variant='outline' p={[1, 2, 4]} 
                         _hover={{ backgroundColor: HoverBg[colorMode] }}>
                             Ссылка
                         </Button>

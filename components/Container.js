@@ -23,16 +23,12 @@ const Container = ({ children }) => {
     }
     const StickyNav = styled(Flex)`
         position: sticky;
-        z-index: 10;
-        top: 0;
-        backdrop-filter: saturate(180%) blur(20px);
-        transition: height .5s, line-height .5s;
         `
 
     return (
         <>
             <StickyNav flexDirection="row" justifyContent="space-between" alignItems="center" maxWidth="700px"
-                width="100%" bg={bgColor[colorMode]} as="nav" px={[2, 6, 6]} py={2} mt={8} mb={[0, 0, 8]} mx="auto"
+                width="100%" bg={bgColor[colorMode]} px={[4, 0, 0]} mt={6} mb={[0, 0, 5]} mx="auto"
             >
                 <Box>
                     <NextLink href="/" passHref> 

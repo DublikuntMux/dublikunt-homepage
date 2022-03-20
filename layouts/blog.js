@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react/index'
 import Head from 'next/head'
 import { parseISO, format } from 'date-fns'
 import { useColorMode, Heading, Text, Flex, Stack, Avatar } from '@chakra-ui/react'

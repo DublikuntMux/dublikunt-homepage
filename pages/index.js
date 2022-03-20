@@ -10,12 +10,13 @@ export default function Index() {
     light: 'gray.700',
     dark: 'gray.400'
   }
+  
   return (
     <Container>
       <Head>
         <title>Home - Dublikunt Max</title>
       </Head>
-      <Stack as="main" spacing={8} justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2} >
+      <Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2} >
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" >
           <Flex alignItems='center' gap={6}>
             <Heading align="center" size="lg" mb={2}>Всем привет я Dublikunt Max</Heading>
