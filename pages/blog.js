@@ -26,7 +26,7 @@ export default function Blog({ posts }) {
                 <Stack as="main" justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" >
                     <Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" >
                         <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
-                            Найдено ({posts.length} постов)
+                            Найдено: {posts.length} пост
                         </Heading>
                         <InputGroup mb={4} mr={4} w="100%">
                             <Input  onChange={(event) => setSearchValue(event.target.value)} 

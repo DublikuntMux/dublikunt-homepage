@@ -60,7 +60,7 @@ const ContainerBlog= ({ children }) => {
                         <MotionButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
                         leftIcon={<SiSlickpic />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
                          _hover={{ backgroundColor: navHoverBg[colorMode] }}>
-                            Проэкты
+                            Проекты
                         </MotionButton>
                     </NextLink>
                 </Box>

@@ -25,17 +25,17 @@ export default function Index() {
       <Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2} >
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" >
           <Flex alignItems='center' gap={6}>
-            <Heading align="center" size="lg" mb={2}>Всем привет я Dublikunt Max</Heading>
+            <Heading align="center" size="lg" mb={2}>Всем, привет! Я, Dublikunt Max</Heading>
             <MotionAvatar whileHover={{ scale: 1.4 }}
-            size='2xl' name='Dublikunt Max' src='/images/Ava.jpg' />
+            size='2xl' name='Dublikunt Max' src='/images/Ava.jpg' alt="Аватарка не найдена"/>
           </Flex>
           <MotionText initial={{ x:-500}} animate={{ x:0 }}
           color={colorSecondary[colorMode]}
-          >Что я могу сказать про себя ? Да не чего ))))
+          >Что я могу сказать про себя ? Да, ничего ))))
           </MotionText>
         </Flex>
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="center" maxWidth="700px" >
-          <Heading align="center" size="lg" mb={2}>Языки програмирования которые я знаю</Heading>
+          <Heading align="center" size="lg" mb={2}>Языки программирования, которые я знаю</Heading>
           <Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(3, 1fr)' gap={6}>
             <MotionBox whileHover={{ scale: 1.4 }}><SiCsharp size="4em" color='#239120'/> </MotionBox>
             <MotionBox whileHover={{ scale: 1.4 }}><SiC size="4em" color='#A8B9CC'/> </MotionBox>
