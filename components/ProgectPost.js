@@ -1,13 +1,16 @@
 import { Box, Image, Badge, useColorMode, AspectRatio, Button } from '@chakra-ui/react'
 import { AiFillStar, AiOutlineArrowRight} from "react-icons/ai";
 import NextLink from 'next/link'
+import { motion } from 'framer-motion';
 
 const ProgectPost = ({img, href, name, stars, status}) => {
 
+    const MotionBox = motion(Box)
+
     const { colorMode } = useColorMode()
     const color = {
-        light: 'white',
-        dark: 'black'
+        light: '#d4ff00',
+        dark: '#bad145'
     }
     const invcolor = {
         light: 'black',
@@ -19,7 +22,8 @@ const ProgectPost = ({img, href, name, stars, status}) => {
     }
 
     return (
-        <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+        <MotionBox whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
+         maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
             <AspectRatio maxW='232px' ratio={4 / 3}>
                 <Image src={img}/>
             </AspectRatio>
@@ -34,7 +38,7 @@ const ProgectPost = ({img, href, name, stars, status}) => {
                 </Box>
                 <Box mt='1' fontWeight='semibold' lineHeight='tight' isTruncated >
                     <NextLink href={href} passHref> 
-                        <Button target="_blank" rightIcon={<AiOutlineArrowRight color={invcolor[colorMode]}/>} size='sm' variant='outline' p={[1, 2, 4]} 
+                        <Button rightIcon={<AiOutlineArrowRight color={invcolor[colorMode]}/>} size='sm' variant='outline' p={[1, 2, 4]} 
                         _hover={{ backgroundColor: HoverBg[colorMode] }}>
                             Ссылка
                         </Button>
@@ -46,12 +50,12 @@ const ProgectPost = ({img, href, name, stars, status}) => {
                     .map((_, i) => (
                     <AiFillStar
                         key={i}
-                        color={i < stars ? invcolor[colorMode] : color[colorMode]}
+                        color={i < stars ? color[colorMode] : invcolor[colorMode]}
                     />
                     ))}
                 </Box>
             </Box>
-        </Box>
+        </MotionBox>
     )
 }
 

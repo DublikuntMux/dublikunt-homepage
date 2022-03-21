@@ -4,8 +4,7 @@
   "description": "Max's website",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "server": "serve out",
+    "server": "next build && next start",
     "deploy": "next build && next export"
   },
   "author": "Dublikunt Max",
@@ -29,8 +28,5 @@
     "remark-capitalize": "^1.1.0",
     "remark-code-titles": "^0.1.1",
     "remark-slug": "^6.0.0"
-  },
-  "devDependencies": {
-    "serve": "^13.0.2"
   }
 }
