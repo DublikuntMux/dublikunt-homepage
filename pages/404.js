@@ -9,7 +9,7 @@ export default function Custom404() {
             <Heading size="2xl" mb={2} align="center">Не найдено</Heading>
             <Text align="center">Такой странички нет</Text>
             <Box my={3} align="center">
-                <NextLink href="/">
+                <NextLink href="/" passHref>
                     <Button colorScheme="teal">Вернутся на главную</Button>
                 </NextLink>
             </Box>

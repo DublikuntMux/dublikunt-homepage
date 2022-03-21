@@ -21,7 +21,7 @@ const SocialePost = ({img, href, description, name}) => {
         <MotionBox whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
          maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
             <AspectRatio maxW='232px' ratio={4 / 3}>
-                <Image src={img}/>
+                <Image src={img} alt="Изображение не найдено"/>
             </AspectRatio>
             <Box p='6'>
                 <Box mt='1' fontWeight='semibold' lineHeight='tight' isTruncated >
