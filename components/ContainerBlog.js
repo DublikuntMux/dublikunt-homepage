@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { useColorMode, Button, Flex, Box } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { SiBlogger, SiAirplayvideo, SiAngellist, SiGithub, SiSlickpic } from "react-icons/si";
@@ -8,6 +9,8 @@ import DarkModeSwitch from '../components/DarkModeSwitch'
 
 const ContainerBlog= ({ children }) => {
     
+    const MotionButton = motion(Button)
+
     const { colorMode } = useColorMode()
     const bgColor = {
         light: 'white',
@@ -33,35 +36,40 @@ const ContainerBlog= ({ children }) => {
             >
                 <Box>
                     <NextLink href="/" passHref> 
-                        <Button leftIcon={<SiAirplayvideo />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                        <MotionButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
+                        leftIcon={<SiAirplayvideo />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
                         _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                             Главная
-                        </Button>
+                        </MotionButton>
                     </NextLink>
                     <NextLink href="/blog" passHref>
-                        <Button leftIcon={<SiBlogger />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                        <MotionButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
+                        leftIcon={<SiBlogger />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
                         _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                             Блог
-                        </Button>
+                        </MotionButton>
                     </NextLink>
                     <NextLink href="/social" passHref>
-                        <Button leftIcon={<SiAngellist />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                        <MotionButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
+                        leftIcon={<SiAngellist />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
                          _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                             Соц. сети
-                        </Button>
+                        </MotionButton>
                     </NextLink>
                     <NextLink href="/progect" passHref>
-                        <Button leftIcon={<SiSlickpic />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
+                        <MotionButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
+                        leftIcon={<SiSlickpic />} as="a" size='sm' variant='outline' p={[1, 2, 4]} 
                          _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                             Проэкты
-                        </Button>
+                        </MotionButton>
                     </NextLink>
                 </Box>
             <NextLink href="https://github.com/DublikuntMux/dublikunt-homepage" passHref>
-                <Button target="_blank" size="xs" leftIcon={<SiGithub />} as="a" variant='outline' p={[1, 2, 4]}
+                <MotionButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
+                target="_blank" size="xs" leftIcon={<SiGithub />} as="a" variant='outline' p={[1, 2, 4]}
                  _hover={{ backgroundColor: navHoverBg[colorMode] }}>
                     Sorce
-                </Button>
+                </MotionButton>
             </NextLink>
             <DarkModeSwitch />
             </StickyNav >
