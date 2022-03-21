@@ -16,9 +16,9 @@ export default function Sociale() {
           <Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(3, 1fr)' gap={4}>
               <SocialePost href='https://github.com/DublikuntMux' img='/images/Ava.jpg'
                name="Github" description='Тут есть все мои проэкты'/>
-              <SocialePost href='https://www.instagram.com/dublikunt/' img='/images/Insta.png'
+              <SocialePost href='https://www.instagram.com/dublikunt/' img='/images/Insta.jpg'
                name="Instagram" description='Немного моей личной жизни'/>
-              <SocialePost href='https://www.youtube.com/channel/UCwf83l1dG7JKvmLdR5rDZTg' img='/images/Crock.png'
+              <SocialePost href='https://www.youtube.com/channel/UCwf83l1dG7JKvmLdR5rDZTg' img='/images/Crock.jpg'
                name="Youtube" description='Смешные видио'/>
           </Grid>
         </Flex>

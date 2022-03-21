@@ -31,7 +31,7 @@ const Container = ({ children }) => {
 
     return (
         <>
-            <StickyNav initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} 
+            <StickyNav initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                 flexDirection="row" justifyContent="space-between" alignItems="center" maxWidth="700px"
                 width="100%" bg={bgColor[colorMode]} px={[4, 0, 0]} mt={6} mb={[0, 0, 5]} mx="auto"
             >
@@ -74,7 +74,7 @@ const Container = ({ children }) => {
             </NextLink>
             <DarkModeSwitch />
             </StickyNav >
-            <MotionFlex initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+            <MotionFlex initial={{ opacity: 0 }} animate={{ opacity: 1 }}
             as="main" justifyContent="center" flexDirection="column" bg={bgColor[colorMode]} color={color[colorMode]} 
             px={[0, 4, 4]} mt={[4, 8, 8]}
             >

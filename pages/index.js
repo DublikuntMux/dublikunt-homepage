@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useColorMode, Heading, Text, Flex, Stack, Grid, Avatar, Box} from '@chakra-ui/react'
-import { SiCsharp, SiC, SiCplusplus, SiDotnet, SiPython, SiGo, SiRust, SiRuby, SiJavascript} from "react-icons/si";
-import { motion } from 'framer-motion';
+import { SiCsharp, SiC, SiCplusplus, SiDotnet, SiPython, SiGo, SiRust, SiRuby, SiJavascript} from "react-icons/si"
+import { motion } from 'framer-motion'
 
 import Container from '../components/Container'
 
@@ -9,6 +9,7 @@ export default function Index() {
 
   const MotionAvatar = motion(Avatar)
   const MotionBox = motion(Box)
+  const MotionText = motion(Text)
 
   const { colorMode } = useColorMode()
   const colorSecondary = {
@@ -28,9 +29,10 @@ export default function Index() {
             <MotionAvatar whileHover={{ scale: 1.4 }}
             size='2xl' name='Dublikunt Max' src='/images/Ava.jpg' />
           </Flex>
-          <Text color={colorSecondary[colorMode]}
+          <MotionText initial={{ x:-500}} animate={{ x:0 }}
+          color={colorSecondary[colorMode]}
           >Что я могу сказать про себя ? Да не чего ))))
-          </Text>
+          </MotionText>
         </Flex>
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="center" maxWidth="700px" >
           <Heading align="center" size="lg" mb={2}>Языки програмирования которые я знаю</Heading>
