@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "ms-vscode.vscode-typescript-next",
+        "donjayamanne.githistory",
+        "editorconfig.editorconfig",
+        "rvest.vs-code-prettier-eslint"
+    ]
+}
