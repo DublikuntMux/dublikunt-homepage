@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import { Heading, Stack, Flex, Grid } from '@chakra-ui/react'
+
 import Container from '../components/Container'
 import ProgectPost from '../components/ProgectPost'
+import Voxel from '../components/voxel'
 
 export default function Progect() {
 
@@ -10,6 +12,7 @@ export default function Progect() {
       <Head>
         <title>Progect - Dublikunt Max</title>
       </Head>
+			<Voxel />
       <Heading align="center" size="2xl" mb={2}>Мои проекты</Heading>
       <Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2} >
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" >

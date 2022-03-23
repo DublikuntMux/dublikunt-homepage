@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { useColorMode, Heading, Text, Flex, Stack, Grid, Avatar, Box} from '@chakra-ui/react'
-import { SiCsharp, SiC, SiCplusplus, SiDotnet, SiPython, SiGo, SiRust, SiRuby, SiJavascript} from "react-icons/si"
-import { motion } from 'framer-motion'
+import { SiCsharp, SiC, SiCplusplus, SiDotnet, SiPython, SiGo, SiRust, SiRuby, SiJavascript} from 'react-icons/si'
+import { motion, AnimatePresence } from 'framer-motion'
+import Voxel from '../components/voxel'
 
 import Container from '../components/Container'
 
@@ -9,7 +10,6 @@ export default function Index() {
 
   const MotionAvatar = motion(Avatar)
   const MotionBox = motion(Box)
-  const MotionText = motion(Text)
 
   const { colorMode } = useColorMode()
   const colorSecondary = {
@@ -24,15 +24,17 @@ export default function Index() {
       </Head>
       <Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2} >
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" >
+					<Voxel />
           <Flex alignItems='center' gap={6}>
             <Heading align="center" size="lg" mb={2}>Всем, привет! Я, Dublikunt Max</Heading>
             <MotionAvatar whileHover={{ scale: 1.4 }}
             size='2xl' name='Dublikunt Max' src='/images/Ava.jpg' alt="Аватарка не найдена"/>
           </Flex>
-          <MotionText initial={{ x:-500}} animate={{ x:0 }}
-          color={colorSecondary[colorMode]}
-          >Что я могу сказать про себя ? Да, ничего ))))
-          </MotionText>
+					<AnimatePresence exitBeforeEnter initial={true}>
+						<Text color={colorSecondary[colorMode]}>
+							Что я могу сказать про себя ? Да, ничего ))))
+          	</Text>
+					</AnimatePresence>
         </Flex>
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="center" maxWidth="700px" >
           <Heading align="center" size="lg" mb={2}>Языки программирования, которые я знаю</Heading>
