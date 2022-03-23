@@ -2,8 +2,8 @@ import Head from 'next/head'
 import { useColorMode, Heading, Text, Flex, Stack, Grid, Avatar, Box} from '@chakra-ui/react'
 import { SiCsharp, SiC, SiCplusplus, SiDotnet, SiPython, SiGo, SiRust, SiRuby, SiJavascript} from 'react-icons/si'
 import { motion, AnimatePresence } from 'framer-motion'
-import Voxel from '../components/voxel'
 
+import Voxel from '../components/voxel'
 import Container from '../components/Container'
 
 export default function Index() {

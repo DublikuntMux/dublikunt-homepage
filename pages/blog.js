@@ -6,6 +6,7 @@ import { RiSearchEyeLine } from 'react-icons/ri'
 import { getAllFilesFrontMatter } from '../lib/mdx'
 import Container from '../components/Container'
 import BlogPost from '../components/BlogPost'
+import Voxel from '../components/voxel'
 
 
 export default function Blog({ posts }) {
