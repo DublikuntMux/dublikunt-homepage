@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useColorMode, Heading, Text, Flex, Stack, Grid, Avatar, Box} from '@chakra-ui/react'
-import { SiCsharp, SiC, SiCplusplus, SiDotnet, SiPython, SiGo, SiRust, SiRuby, SiJavascript} from 'react-icons/si'
+import { SiCsharp, SiC, SiCplusplus, SiDotnet, SiDart, SiPython, SiGo, SiRust, SiJavascript} from 'react-icons/si'
 import { motion, AnimatePresence } from 'framer-motion'
 
 import Voxel from '../components/voxel'
@@ -46,7 +46,7 @@ export default function Index() {
             <MotionBox whileHover={{ scale: 1.4 }}><SiPython size="4em" color='#3776AB'/> </MotionBox>
             <MotionBox whileHover={{ scale: 1.4 }}><SiGo size="4em" color='#00ADD8'/> </MotionBox>
             <MotionBox whileHover={{ scale: 1.4 }}><SiRust size="4em" color='#473005'/> </MotionBox>
-            <MotionBox whileHover={{ scale: 1.4 }}><SiRuby size="4em" color='#CC342D'/> </MotionBox>
+            <MotionBox whileHover={{ scale: 1.4 }}><SiDart size="4em" color='#0175C2'/> </MotionBox>
             <MotionBox whileHover={{ scale: 1.4 }}><SiJavascript size="4em" color='#F7DF1E'/> </MotionBox>
           </Grid>
         </Flex>
