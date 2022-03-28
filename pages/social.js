@@ -3,7 +3,6 @@ import { Heading, Flex, Stack, Grid } from '@chakra-ui/react'
 
 import Container from '../components/Container'
 import SocialePost from '../components/SocialePost'
-import Voxel from '../components/voxel'
 
 export default function Sociale() {
 
@@ -12,7 +11,6 @@ export default function Sociale() {
       <Head>
         <title>Sociale Networck - Dublikunt Max</title>
       </Head>
-			<Voxel />
       <Heading align="center" size="2xl" mb={2}>Мои социальные сети</Heading>
       <Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2} >
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" >

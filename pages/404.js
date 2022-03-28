@@ -1,7 +1,6 @@
 import { Button, Heading, Text, Box, useColorMode } from '@chakra-ui/react'
 import NextLink from 'next/link'
 
-import Voxel from '../components/voxel'
 import Container from '../components/Container'
 
 export default function Custom404() {
@@ -15,7 +14,6 @@ export default function Custom404() {
     return (
         <Container>
             <Heading size="2xl" mb={2} align="center">Не найдено</Heading>
-			<Voxel />
             <Text align="center">Такой странички нет</Text>
             <Box my={3} align="center">
                 <NextLink href="/" passHref>

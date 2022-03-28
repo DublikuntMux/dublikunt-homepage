@@ -3,7 +3,6 @@ import { useColorMode, Heading, Text, Flex, Stack, Grid, Avatar, Box} from '@cha
 import { SiCsharp, SiC, SiCplusplus, SiDotnet, SiDart, SiPython, SiGo, SiRust, SiJavascript} from 'react-icons/si'
 import { motion, AnimatePresence } from 'framer-motion'
 
-import Voxel from '../components/voxel'
 import Container from '../components/Container'
 
 export default function Index() {
@@ -24,7 +23,6 @@ export default function Index() {
       </Head>
       <Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2} >
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" >
-					<Voxel />
           <Flex alignItems='center' gap={6}>
             <Heading align="center" size="lg" mb={2}>Всем, привет! Я, Dublikunt Max</Heading>
             <MotionAvatar whileHover={{ scale: 1.4 }}
