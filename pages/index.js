@@ -36,16 +36,16 @@ export default function Index() {
         </Flex>
         <Flex flexDirection="column" justifyContent="flex-start" alignItems="center" maxWidth="700px" >
           <Heading align="center" size="lg" mb={2}>Языки программирования, которые я знаю</Heading>
-          <Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(3, 1fr)' gap={6}>
-            <MotionBox whileHover={{ scale: 1.4 }}><SiCsharp size="4em" color='#239120'/> </MotionBox>
-            <MotionBox whileHover={{ scale: 1.4 }}><SiC size="4em" color='#A8B9CC'/> </MotionBox>
-            <MotionBox whileHover={{ scale: 1.4 }}><SiCplusplus size="4em" color='#00599C'/> </MotionBox>
-            <MotionBox whileHover={{ scale: 1.4 }}><SiDotnet size="4em" color='#512BD4'/> </MotionBox>
+          <Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(3, 1fr)' gap={6}>            
             <MotionBox whileHover={{ scale: 1.4 }}><SiPython size="4em" color='#3776AB'/> </MotionBox>
+						<MotionBox whileHover={{ scale: 1.4 }}><SiCplusplus size="4em" color='#00599C'/> </MotionBox>
+						<MotionBox whileHover={{ scale: 1.4 }}><SiC size="4em" color='#A8B9CC'/> </MotionBox>
+						<MotionBox whileHover={{ scale: 1.4 }}><SiDotnet size="4em" color='#512BD4'/> </MotionBox>
+						<MotionBox whileHover={{ scale: 1.4 }}><SiCsharp size="4em" color='#239120'/> </MotionBox>
             <MotionBox whileHover={{ scale: 1.4 }}><SiGo size="4em" color='#00ADD8'/> </MotionBox>
             <MotionBox whileHover={{ scale: 1.4 }}><SiRust size="4em" color='#473005'/> </MotionBox>
+						<MotionBox whileHover={{ scale: 1.4 }}><SiJavascript size="4em" color='#F7DF1E'/> </MotionBox>
             <MotionBox whileHover={{ scale: 1.4 }}><SiDart size="4em" color='#0175C2'/> </MotionBox>
-            <MotionBox whileHover={{ scale: 1.4 }}><SiJavascript size="4em" color='#F7DF1E'/> </MotionBox>
           </Grid>
         </Flex>
       </Stack>
