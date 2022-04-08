@@ -1,6 +1,6 @@
 {
   "name": "dublikunt-homepage",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Max's website",
   "scripts": {
     "dev": "next dev",

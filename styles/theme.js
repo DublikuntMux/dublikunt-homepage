@@ -11,8 +11,7 @@ const fonts = {
 const breakpoints = createBreakpoints({
     sm: "40em",
     md: "52em",
-    lg: "64em",
-    lg: "62em",
+    lg: "62em"
 })
 
 const overrides = {

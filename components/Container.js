@@ -63,7 +63,7 @@ const Container = ({ children }) => {
                             	Соц. сети
                         	</MotionButton>
                     	</NextLink>
-                    	<NextLink href="/progect" passHref>
+                    	<NextLink href="/project" passHref>
                         	<MotionButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
                         	leftIcon={<SiSlickpic />} size='sm' variant='outline' p={[1, 2, 4]} 
                          	_hover={{ backgroundColor: navHoverBg[colorMode] }}>
