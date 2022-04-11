@@ -1,7 +1,7 @@
 import { useColorMode, Heading, Text, Flex, Stack, Avatar } from '@chakra-ui/react'
 import { parseISO, format } from 'date-fns'
 import { useRouter } from 'next/router'
-import React from 'react/index'
+import React from 'react'
 import Head from 'next/head'
 
 import Container from '../components/Container'
