@@ -1,5 +1,5 @@
 import { ChakraProvider, ColorModeProvider, useColorMode } from '@chakra-ui/react'
-import { prismLightTheme, prismDarkTheme } from '../styles/prism'
+import { prismLightTheme, prismDarkTheme } from '../styles/colorMode'
 import { Global, css } from '@emotion/react'
 import customTheme from '../styles/theme'
 import React from 'react'

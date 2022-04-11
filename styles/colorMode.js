@@ -206,7 +206,6 @@ export const prismDarkTheme = css`
   .token.selector,
   .token.doctype {
 	color: rgb(199, 146, 234);
-	font-style: 'italic';
   }
   .token.class-name {
 	color: rgb(255, 203, 139);
