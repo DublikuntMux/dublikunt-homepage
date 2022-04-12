@@ -206,6 +206,7 @@ export const prismDarkTheme = css`
   .token.selector,
   .token.doctype {
 	color: rgb(199, 146, 234);
+	font-style: 'italic';
   }
   .token.class-name {
 	color: rgb(255, 203, 139);
@@ -228,14 +229,17 @@ export const prismDarkTheme = css`
   pre[class*='language-'] {
 	color: ${theme.colors.gray[50]};
   }
+  
   :not(pre) > code[class*='language-'],
   pre[class*='language-'] {
 	background: ${theme.colors.gray[800]};
 	border: 1px solid ${theme.colors.gray[700]};
   }
+  
   .mdx-marker {
 	background-color: ${theme.colors.gray[700]};
   }
+  
   .remark-code-title {
 	background: ${theme.colors.gray[700]};
 	color: ${theme.colors.gray[100]};

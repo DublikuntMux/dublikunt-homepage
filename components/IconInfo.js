@@ -2,7 +2,7 @@ import { Modal, ModalOverlay, ModalContent, ModalHeader,ModalBody, ModalCloseBut
 	useDisclosure, useColorMode } from '@chakra-ui/react'
 import {motion} from "framer-motion"
 
-const IconInfo = ({ children, color, title, text }) => {
+const IconInfo = ({ icon, color, title, text }) => {
 	
 	const{ isOpen, onOpen, onClose } = useDisclosure()
 	const { colorMode } = useColorMode()
@@ -25,7 +25,7 @@ const IconInfo = ({ children, color, title, text }) => {
 	return (
 		<>
 			<MotionButton onClick={onOpen} whileHover={{ scale: 1.4 }} whileTap={{ scale: 0.9}} size="4em" color={color}
-						  variant='ghost' icon={children} />
+						  variant='ghost' icon={icon} />
 			
 			<Modal size="3xl" isOpen={isOpen} onClose={onClose} isCentered motionPreset='slideInBottom' >
 				<ModalOverlay />
