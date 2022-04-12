@@ -18,7 +18,7 @@ export default function Social() {
 									name="Github" description='Здесь все мои проекты'/>
 						<SocialPost href='https://www.instagram.com/dublikunt/' img='/images/Insta.jpg'
 									name="Instagram" description='Немного моей личной жизни'/>
-						<SocialPost href='https://www.youtube.com/channel/UCwf83l1dG7JKvmLdR5rDZTg' img='/images/Crock.jpg'
+						<SocialPost href='https://www.youtube.com/channel/UCwf83l1dG7JKvmLdR5rDZTg' img='/images/chenel.jpg'
 									name="Youtube" description='Смешные видео'/>
 					</Grid>
 				</Flex>
