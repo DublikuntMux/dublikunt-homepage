@@ -8,7 +8,7 @@ import Container from '../components/Container'
 
 export default function BlogLayout({ children, frontMatter }) {
 	const router = useRouter()
-	const slug = router.asPath.replace('/blog', '')
+	const slug = router.asPath.replace('/blog/', '')
 	const { colorMode } = useColorMode()
 	
 	const TextColor = {
@@ -19,7 +19,7 @@ export default function BlogLayout({ children, frontMatter }) {
 	return (
 		<Container>
 			<Head>
-				<title>${slug} - Blog - Dublikunt Max</title>
+				<title>{slug} - Blog - Dublikunt Max</title>
 			</Head>
 			<Stack
 				as="article"

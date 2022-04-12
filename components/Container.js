@@ -75,7 +75,7 @@ const Container = ({ children }) => {
 						<MotionButton whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
 									  target="_blank" size="xs" leftIcon={<SiGithub />} as="a" variant='outline' p={[1, 2, 4]}
 									  _hover={{ backgroundColor: HoverBg[colorMode] }}>
-							Sorce
+							Source
 						</MotionButton>
 					</NextLink>
 					<DarkModeSwitch />

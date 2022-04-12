@@ -1,5 +1,6 @@
 import { Button, Heading, Text, Box, useColorMode } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import Head from 'next/head'
 
 import Container from '../components/Container'
 
@@ -13,6 +14,9 @@ export default function Custom500() {
 
 	return (
 		<Container>
+			<Head>
+				<title>500 Error - Dublikunt Max</title>
+			</Head>
 			<Heading size="2xl" mb={2} align="center">Произошла ошибка</Heading>
 			<Text align="center">У нас произошла ошибка</Text>
 			<Box my={3} align="center">
