@@ -27,7 +27,7 @@ const SocialPost = ({img, href, description, name}) => {
 				<Box mt='1' fontWeight='semibold' lineHeight='tight' isTruncated >
 					{name}
 				</Box>
-				<Text fontSize='10px' color={Color[colorMode]}>
+				<Text fontSize='10px' >
 					{description}
 				</Text>
 				<Box mt='1' fontWeight='semibold' lineHeight='tight' isTruncated >
