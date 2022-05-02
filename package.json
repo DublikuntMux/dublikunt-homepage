@@ -12,7 +12,7 @@
   "author": "Dublikunt Max",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.17.9",
+    "@babel/core": "^7.17.10",
     "@chakra-ui/react": "^1.8.8",
     "@chakra-ui/system": "^1.12.1",
     "@chakra-ui/theme-tools": "^1.3.6",
