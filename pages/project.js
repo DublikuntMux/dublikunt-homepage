@@ -14,6 +14,8 @@ export default function Project() {
 			<Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2} >
 				<Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" >
 					<Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(3, 1fr)' gap={4}>
+						<ProjectPost href='https://github.com/DublikuntMux/AlbedoMod' img='/images/Albedo.jpg'
+									 name="Albedo Mod" stars="5" status="New" statcolor='cyan'/>
 						<ProjectPost href='https://github.com/DublikuntMux/Alonka' img='/images/Alonka.jpg'
 									 name="Alonka toolbox" stars="4" status="New" statcolor='cyan'/>
 						<ProjectPost href='https://github.com/DublikuntMux/dublikunt-homepage' img='/images/Site.jpg'
