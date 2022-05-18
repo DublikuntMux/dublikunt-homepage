@@ -1,21 +1,21 @@
-import { useColorMode, Heading, Text, Flex, Stack, Avatar } from '@chakra-ui/react'
-import { parseISO, format } from 'date-fns'
-import { useRouter } from 'next/router'
+import {Avatar, Flex, Heading, Stack, Text, useColorMode} from '@chakra-ui/react'
+import {format, parseISO} from 'date-fns'
+import {useRouter} from 'next/router'
 import Head from 'next/head'
 import React from 'react'
 
 import Container from '../components/Container'
 
-export default function BlogLayout({ children, frontMatter }) {
+export default function BlogLayout({children, frontMatter}) {
 	const router = useRouter()
 	const slug = router.asPath.replace('/blog/', '')
-	const { colorMode } = useColorMode()
-	
+	const {colorMode} = useColorMode()
+
 	const TextColor = {
 		light: '#2D3748',
 		dark: '#A0AEC0'
 	}
-	
+
 	return (
 		<Container>
 			<Head>

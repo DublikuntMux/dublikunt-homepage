@@ -1,5 +1,5 @@
-import { theme } from '@chakra-ui/react'
-import { css } from '@emotion/react'
+import {theme} from '@chakra-ui/react'
+import {css} from '@emotion/react'
 
 const prismBaseTheme = css`
   code {
@@ -206,7 +206,7 @@ export const prismDarkTheme = css`
   .token.selector,
   .token.doctype {
 	color: rgb(199, 146, 234);
-	font-style: 'italic';
+	font-style: italic;
   }
   .token.class-name {
 	color: rgb(255, 203, 139);

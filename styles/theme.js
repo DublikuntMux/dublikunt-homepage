@@ -1,6 +1,5 @@
-import { createBreakpoints } from "@chakra-ui/theme-tools"
-import { theme as chakraTheme } from '@chakra-ui/react'
-import { extendTheme } from "@chakra-ui/react"
+import {createBreakpoints} from "@chakra-ui/theme-tools"
+import {extendTheme, theme as chakraTheme} from '@chakra-ui/react'
 
 const fonts = {
 	...chakraTheme.fonts,

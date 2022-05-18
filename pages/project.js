@@ -1,4 +1,4 @@
-import { Heading, Stack, Flex, Grid } from '@chakra-ui/react'
+import {Flex, Grid, Heading, Stack} from '@chakra-ui/react'
 import Head from 'next/head'
 
 import ProjectPost from '../components/ProjectPost'
@@ -11,8 +11,8 @@ export default function Project() {
 				<title>Project - Dublikunt Max</title>
 			</Head>
 			<Heading align="center" size="2xl" mb={2}>Мои проекты</Heading>
-			<Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2} >
-				<Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px" >
+			<Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2}>
+				<Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px">
 					<Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(3, 1fr)' gap={4}>
 						<ProjectPost href='https://github.com/DublikuntMux/AlbedoMod' img='/images/Albedo.jpg'
 									 name="Albedo Mod" stars="5" status="New" statcolor='cyan'/>

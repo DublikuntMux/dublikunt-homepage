@@ -1,8 +1,8 @@
-import { Box, Alert, Code, Heading, Link, Text, Divider, useColorMode } from '@chakra-ui/react';
+import {Alert, Box, Code, Divider, Heading, Link, Text, useColorMode} from '@chakra-ui/react';
 import NextLink from 'next/link'
 
 const CustomLink = (props) => {
-	const { colorMode } = useColorMode()
+	const {colorMode} = useColorMode()
 	const Color = {
 		light: '#3182CE',
 		dark: '#4299E1'
@@ -23,7 +23,7 @@ const CustomLink = (props) => {
 }
 
 const Quote = (props) => {
-	const { colorMode } = useColorMode()
+	const {colorMode} = useColorMode()
 	const bgColor = {
 		light: 'blue.50',
 		dark: 'blue.900'
@@ -57,7 +57,7 @@ const DocsHeading = (props) => (
 				visibility: 'hidden',
 				content: `""`
 			},
-			'&[id]:hover a': { opacity: 1 }
+			'&[id]:hover a': {opacity: 1}
 		}}
 		{...props}
 		mb="1em"
@@ -81,13 +81,13 @@ const DocsHeading = (props) => (
 )
 
 const Hr = () => {
-	const { colorMode } = useColorMode()
+	const {colorMode} = useColorMode()
 	const borderColor = {
 		light: 'gray.200',
 		dark: 'gray.600'
 	}
 
-	return <Divider borderColor={borderColor[colorMode]} my={4} w="100%" />
+	return <Divider borderColor={borderColor[colorMode]} my={4} w="100%"/>
 }
 
 const MDXComponents = {
@@ -110,5 +110,5 @@ const MDXComponents = {
 	blockquote: Quote,
 }
 
-export { CustomLink }
+export {CustomLink}
 export default MDXComponents
