@@ -23,8 +23,8 @@ export default function Blog({posts}) {
 				<Head>
 					<title>Blog - DublikuntMax</title>
 				</Head>
-				<Stack as="main" justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px">
-					<Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px">
+				<Stack as="main" justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto">
+					<Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start">
 						<Heading letterSpacing="tight" mb={4} as="h1" size="xl">
 							Всего на сайте: {posts.length} пост
 						</Heading>

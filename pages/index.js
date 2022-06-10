@@ -59,12 +59,13 @@ export default function Index() {
 			<Head>
 				<title>Home - Dublikunt Max</title>
 			</Head>
-			<Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" maxWidth="700px" px={2}>
-				<Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start" maxWidth="700px">
+			<Stack justifyContent="center" alignItems="flex-start" m="0 auto 4rem auto" px={2}>
+				<Flex flexDirection="column" justifyContent="flex-start" alignItems="flex-start">
 					<Flex alignItems='center' gap={6}>
 						<Heading align="center" size="lg" mb={2}>Всем, привет! Я, Dublikunt Max</Heading>
 						<MotionAvatar whileHover={{scale: 1.3}}
-									  size='2xl' name='Dublikunt Max' src='/images/Ava.jpg' alt="Аватарка не найдена"/>
+									  size='2xl' name='Dublikunt Max' src='/images/soci/avatar.jpg'
+									  alt="Аватарка не найдена"/>
 					</Flex>
 					<AnimatePresence exitBeforeEnter initial={true}>
 						<Text color={SecondColor[colorMode]}>
@@ -72,7 +73,7 @@ export default function Index() {
 						</Text>
 					</AnimatePresence>
 				</Flex>
-				<Flex flexDirection="column" justifyContent="flex-start" alignItems="center" maxWidth="700px" gap={6}>
+				<Flex flexDirection="column" justifyContent="flex-start" alignItems="center" gap={6}>
 					<Heading align="center" size="lg" mb={2}>Языки программирования, которые я знаю</Heading>
 					<Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(3, 1fr)' gap={6}>
 						<IconInfo icon={<SiPython size="4em"/>} color='#3776AB' title='Кобра'
