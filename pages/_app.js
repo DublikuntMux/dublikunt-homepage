@@ -1,47 +1,51 @@
-import {ChakraProvider, ColorModeProvider, useColorMode} from '@chakra-ui/react'
-import {prismDarkTheme, prismLightTheme} from '../styles/prism'
-import {css, Global} from '@emotion/react'
-import customTheme from '../styles/theme'
-import React from 'react'
+import {
+	ChakraProvider,
+	ColorModeProvider,
+	useColorMode,
+} from "@chakra-ui/react";
+import { prismDarkTheme, prismLightTheme } from "../styles/prism";
+import { css, Global } from "@emotion/react";
+import customTheme from "../styles/theme";
+import React from "react";
 
-const GlobalStyle = ({children}) => {
-	const {colorMode} = useColorMode()
+const GlobalStyle = ({ children }) => {
+	const { colorMode } = useColorMode();
 
 	return (
 		<>
 			<Global
 				styles={css`
-				  ${colorMode === 'light' ? prismLightTheme : prismDarkTheme};
+					${colorMode === "light" ? prismLightTheme : prismDarkTheme};
 
-				  ::selection {
-					background-color: #90CDF4;
-					color: #fefefe;
-				  }
+					::selection {
+						background-color: #90cdf4;
+						color: #fefefe;
+					}
 
-				  ::-moz-selection {
-					background: #ffb7b7;
-					color: #fefefe;
-				  }
+					::-moz-selection {
+						background: #ffb7b7;
+						color: #fefefe;
+					}
 
-				  html {
-					min-width: 356px;
-					scroll-behavior: smooth;
-				  }
+					html {
+						min-width: 356px;
+						scroll-behavior: smooth;
+					}
 
-				  #__next {
-					display: flex;
-					flex-direction: column;
-					min-height: 100vh;
-					background: ${colorMode === 'light' ? 'white' : '#171717'};
-				  }
+					#__next {
+						display: flex;
+						flex-direction: column;
+						min-height: 100vh;
+						background: ${colorMode === "light" ? "white" : "#171717"};
+					}
 				`}
 			/>
 			{children}
 		</>
-	)
-}
+	);
+};
 
-function MyApp({Component, pageProps}) {
+function MyApp({ Component, pageProps }) {
 	return (
 		<ChakraProvider resetCSS theme={customTheme}>
 			<ColorModeProvider
@@ -55,7 +59,7 @@ function MyApp({Component, pageProps}) {
 				</GlobalStyle>
 			</ColorModeProvider>
 		</ChakraProvider>
-	)
+	);
 }
 
-export default MyApp
+export default MyApp;

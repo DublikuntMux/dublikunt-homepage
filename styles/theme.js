@@ -1,17 +1,17 @@
-import {createBreakpoints} from "@chakra-ui/theme-tools"
-import {extendTheme, theme as chakraTheme} from '@chakra-ui/react'
+import { createBreakpoints } from "@chakra-ui/theme-tools";
+import { extendTheme, theme as chakraTheme } from "@chakra-ui/react";
 
 const fonts = {
 	...chakraTheme.fonts,
 	body: `'JetBrains Mono', monospace`,
-	heading: `'JetBrains Mono', monospace`
-}
+	heading: `'JetBrains Mono', monospace`,
+};
 
 const breakpoints = createBreakpoints({
 	sm: "40em",
 	md: "52em",
-	lg: "62em"
-})
+	lg: "62em",
+});
 
 const overrides = {
 	...chakraTheme,
@@ -20,7 +20,7 @@ const overrides = {
 	fontWeights: {
 		normal: 300,
 		medium: 600,
-		bold: 700
+		bold: 700,
 	},
 	fontSizes: {
 		xs: "12px",
@@ -34,8 +34,8 @@ const overrides = {
 		"5xl": "48px",
 		"6xl": "64px",
 	},
-}
+};
 
-const customTheme = extendTheme(overrides)
+const customTheme = extendTheme(overrides);
 
-export default customTheme
+export default customTheme;

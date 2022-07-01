@@ -1,20 +1,27 @@
-import {Avatar, Flex, Heading, Stack, Text, useColorMode} from '@chakra-ui/react'
-import {format, parseISO} from 'date-fns'
-import {useRouter} from 'next/router'
-import Head from 'next/head'
-import React from 'react'
+import {
+	Avatar,
+	Flex,
+	Heading,
+	Stack,
+	Text,
+	useColorMode,
+} from "@chakra-ui/react";
+import { format, parseISO } from "date-fns";
+import { useRouter } from "next/router";
+import Head from "next/head";
+import React from "react";
 
-import Container from '../components/Container'
+import Container from "../components/Container";
 
-export default function BlogLayout({children, frontMatter}) {
-	const router = useRouter()
-	const slug = router.asPath.replace('/blog/', '')
-	const {colorMode} = useColorMode()
+export default function BlogLayout({ children, frontMatter }) {
+	const router = useRouter();
+	const slug = router.asPath.replace("/blog/", "");
+	const { colorMode } = useColorMode();
 
 	const TextColor = {
-		light: '#2D3748',
-		dark: '#A0AEC0'
-	}
+		light: "#2D3748",
+		dark: "#A0AEC0",
+	};
 
 	return (
 		<Container>
@@ -27,7 +34,6 @@ export default function BlogLayout({children, frontMatter}) {
 				justifyContent="center"
 				alignItems="flex-start"
 				m="0 auto 4rem auto"
-
 				w="100%"
 				px={2}
 			>
@@ -35,7 +41,6 @@ export default function BlogLayout({children, frontMatter}) {
 					flexDirection="column"
 					justifyContent="flex-start"
 					alignItems="flex-start"
-
 					w="100%"
 				>
 					<Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
@@ -43,8 +48,8 @@ export default function BlogLayout({children, frontMatter}) {
 					</Heading>
 					<Flex
 						justify="space-between"
-						align={['initial', 'center']}
-						direction={['column', 'row']}
+						align={["initial", "center"]}
+						direction={["column", "row"]}
 						mt={2}
 						w="100%"
 						mb={4}
@@ -58,8 +63,8 @@ export default function BlogLayout({children, frontMatter}) {
 							/>
 							<Text fontSize="sm" color={TextColor[colorMode]}>
 								{frontMatter.by}
-								{'Dublikunt Max / '}
-								{format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
+								{"Dublikunt Max / "}
+								{format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
 							</Text>
 						</Flex>
 						<Text fontSize="sm" color="gray.500" minWidth="100px" mt={[2, 0]}>
@@ -70,5 +75,5 @@ export default function BlogLayout({children, frontMatter}) {
 				{children}
 			</Stack>
 		</Container>
-	)
+	);
 }

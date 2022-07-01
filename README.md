@@ -1,4 +1,3 @@
-
 <h1 align="center"> DublikuntMax homepage </h1>
 <p align="center">My first site build on next and chakra-ui </p>
 
